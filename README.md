@@ -11,9 +11,9 @@ Automate the following scenario using protractor:
 
 1. Access <https://gyezch5t.trials.alfresco.com/>
 2. Enter
-    username: guest@example.com
-    password: Password
-    click SIGN IN
+- username: guest@example.com
+- password: Password
+- click SIGN IN
 3. Click on NEW -> Create Folder
 4. Create new folder dialog is displayed.
 5. Enter your Github username.
