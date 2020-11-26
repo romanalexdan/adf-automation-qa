@@ -9,7 +9,7 @@ Fork this GitHub repository and push the produced code in your fork repository.
 
 Automate the following scenario using protractor:
 
-1. Access <https://gyezch5t.trials.alfresco.com/>
+1. Access <https://4ovcw1kj.trials.alfresco.com/>
 2. Enter
 - username: guest@example.com
 - password: Password
