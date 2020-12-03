@@ -1,0 +1,20 @@
+{
+     "compilerOptions": {
+          "target": "es6",
+          "module": "commonjs",
+          "moduleResolution": "node",
+          "inlineSourceMap": true,
+          "declaration": false,
+          "noImplicitAny": false,
+          "outDir": "tmp",
+          "types": [
+               "protractor"
+          ]
+     },
+     "exclude": [
+          "node_modules"
+     ],
+     "include": [
+          "./"
+     ]
+}

@@ -1,54 +1,29 @@
-## Alfresco ADF automation QA exercise
+# Alfresco ADF automation QA exercise
 
-Do you love automation testing and you know how to solve the following exercise? Contact us! We may have a job for you :)
-* https://jobs.smartrecruiters.com/Alfresco/743999676099136-senior-qa-automation-engineer
+## Requirements
 
-## Exercise
+- download and install https://nodejs.org/en/download/ and https://www.java.com/En/download/
 
-Fork this GitHub repository and push the produced code in your fork repository. 
+## Structure
 
-Automate the following scenario using protractor:
+1. configuration folder:
+     - contains all project configuration elements like reporters, test runners, and specs.
+     - contains capabilities configuration
+     - contains browser/driver hooks
+2. page-objects folder contains different application pages class definitions and simple methods
+3. user-flows folder for defining different user flows and page interactions
+4. utilities folder for wait helper methods
+5. tests folder for all the spec files and test data
 
-1. Access <https://4ovcw1kj.trials.alfresco.com/>
-2. Enter
-- username: guest@example.com
-- password: Password
-- click SIGN IN
-3. Click on NEW -> Create Folder
-4. Create new folder dialog is displayed.
-5. Enter your Github username.
-6. Name has been added.
-7. Click on 'Create' button.
-8. The dialog is closed. Folder with your Github username is created in the current folder.
-9. Click on NEW -> Create Folder
-10. Create new folder dialog is displayed.
-11. Enter your Github username.
-12. Name has been added.
-13. Click on 'Create' button.
-14. The dialog is not closed.
-15. The message "There's already a folder with this name. Try a different name" is displayed.
-16. Click Cancel
-17. Dialog is closed
-18. Select the folder with your Github username
-19. Right click on the folder
-20. Click Delete
-21. Folder is deleted
+## Installation:
 
-In the README file of the repository we want to see also the following sections:
+- after cloning the project run *npm install* command
+- the command should get all needed packages and dependencies
 
-1. ***Description*** Describes of how to run the automation test
-2. ***Explanation*** Describes the choice made in the solution
-3. ***Prerequisites*** List here what/if anything needs to be installed
+## Run test command:
 
-You can send the link to your fork at mario.romano@alfresco.com. Feel free to attach also your cv and a link to your linkedin profile.
-
-### Starter
-The framework has already been setup in the /starter folder, please add your teest case in the spec.js file.
-
-### Some info about protractor
-* https://github.com/angular/protractor
-* https://blog.cloudboost.io/building-your-first-tests-for-angular5-with-protractor-a48dfc225a75
-
-### Some info about ADF
-* https://github.com/Alfresco/alfresco-ng2-components
-* https://alfresco.github.io/adf-component-catalog/
+```
+npm test // to run the specs added to the wdio.conf.ts configuration file
+npm run allure // to generate Allure reports
+npm run allure-open // to open the Allure report
+```
