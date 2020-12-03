@@ -8,6 +8,11 @@ export class WaitUtilities {
           await element.click();
      }
 
+     async waitAndGetText(element: ElementFinder, timeout = 2000) {
+          await this.waitIsVisible(element, timeout);
+          return await element.getText();
+     }
+
      async waitAndSendKeys(element: ElementFinder, text: string, timeout = 2000) {
           await this.waitIsVisible(element, timeout);
           await element.clear();
@@ -15,10 +20,10 @@ export class WaitUtilities {
      }
 
      waitIsClickable(element: ElementFinder, timeout = 2000) {
-          return browser.wait(EC.elementToBeClickable(element), timeout, `Element isn't clickable after "${timeout}ms"`);
+          return browser.wait(EC.elementToBeClickable(element), timeout, `Element ${element.locator()} isn't clickable after "${timeout}ms"`);
      }
 
      waitIsVisible(element: ElementFinder, timeout = 2000) {
-          return browser.wait(EC.visibilityOf(element), timeout, `Element isn't visible after "${timeout}ms"`);
+          return browser.wait(EC.visibilityOf(element), timeout, `Element ${element.locator()} isn't visible after "${timeout}ms"`);
      }
 }
