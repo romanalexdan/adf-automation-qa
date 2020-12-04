@@ -1,6 +1,7 @@
 import { chromeCapabilities } from './capabilities';
 import { OnPrepare } from './onPrepare';
 import { BeforeLaunch } from './beforeLaunch';
+import { params } from './applicationParams';
 
 
 export let config = {
@@ -14,6 +15,7 @@ export let config = {
         '../tests/**/*.spec.js'
     ],
 
+    params: params,
     directConnect: true,
     allScriptsTimeout: 50000,
     framework: 'mocha',

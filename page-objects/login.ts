@@ -4,7 +4,7 @@ import { WaitUtilities } from "../utilities/waitUtilities";
 export class LoginPage {
 
      async goTo() {
-          await browser.get('https://4ovcw1kj.trials.alfresco.com/');
+          await browser.get(browser.params.url);
      }
 
      async setUserName(userName: string) {
