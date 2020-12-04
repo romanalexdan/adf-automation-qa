@@ -1,11 +1,9 @@
-import { Config } from 'protractor';
 import { chromeCapabilities } from './capabilities';
 import { OnPrepare } from './onPrepare';
 import { BeforeLaunch } from './beforeLaunch';
 
 
 export let config = {
-
     beforeLaunch: () => {
         new BeforeLaunch().setupReporters();
     },

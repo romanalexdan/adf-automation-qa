@@ -15,7 +15,6 @@ export class Dashboard {
 
           await dashboardPage.clickNewButton();
           await dashboardPage.selectNewActionOption('Create Folder');
-
           const modal = new CreateFolderModal();
 
           await modal.setName(name);

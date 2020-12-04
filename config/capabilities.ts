@@ -4,7 +4,7 @@ export const chromeCapabilities = {
      maxInstances: 1,
      chromeOptions: {
           args: [
-               //'headless',
+               'headless',
                'start-maximized',
                'enable-automation',
                '--window-size=1920,1080',
